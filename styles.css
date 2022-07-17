@@ -1,0 +1,21 @@
+html {
+	max-width: 38rem;
+	padding: 2rem;
+	margin: auto;
+	line-height: 1.5rem;
+	font-size: 24px;
+	font-family: 'Dennis Sans', sans-serif;
+	color: #fff;
+	background-color: #1c1d20;
+}
+
+.header {
+	text-align: center;
+	font-size: 2rem;
+	text-decoration: underline;
+	padding-bottom: 2rem;
+}
+
+a {
+	color: #3a45bd;
+}
