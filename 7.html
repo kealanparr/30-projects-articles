@@ -6,12 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Project 7</title>
+	<link rel="stylesheet" href="default.min.css">
+	<script src="highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LPQN06ZQH"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-5LPQN06ZQH');
 	</script>
@@ -21,15 +24,98 @@
 
 <body>
 	<div>
-		<header class="header">You're early!</header>
-		<header class="header">I haven't completed this yet</header>
+		<style>
+			.container {
+				background-color: #201c34;
+				position: relative;
+				display: flex;
+				padding-top: 10px;
+				padding-right: 10px;
+				border-radius: 15px;
+				border: 2px solid #2a2745;
+			}
 
-		<!-- TO DO -->
-		<!-- Change the title for this page, and the name of the file 8.html e.g. -->
-		<!-- <div style="display: flex; justify-content: space-between;">
-			<a style="text-decoration: none; font-size: 100px;" href="/5">&#x2190;</a>
-			<a style="text-decoration: none; font-size: 100px;" href="/7">&#x2192;</a>
-		</div> -->
+			.imageContainer::before {
+				display: inline-block;
+				content: ' ';
+				border-radius: 15px;
+				background-image: url('/assets/7/advanced-ts.svg');
+				/* /assets/7/advanced-ts.svg */
+				background-size: 100px 100px;
+				height: 100px;
+				width: 100px;
+			}
+
+			.percentage::before {
+				display: inline-block;
+				content: ' ';
+				border-radius: 15px;
+				background-image: url('/assets//7/100.svg');
+				/* /assets/7/advanced-ts.svg */
+				background-size: 100px 100px;
+				height: 100px;
+				width: 100px;
+
+				border: 3px solid #2c706b;
+				border-radius: 75px;
+				height: 100px;
+			}
+
+			.textFamily {
+				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
+				display: inline;
+				font-weight: 700;
+				margin: 5px;
+			}
+
+			.align {
+				display: inline-block;
+				margin: auto auto auto 10px;
+			}
+
+			.subtext {
+				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				margin: 5px;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			@media screen and (max-width: 850px) {
+				.percentage {
+					display: none;
+				}
+				.imageContainer{
+					display: none;
+				}
+				.subtext {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+			}
+
+
+		</style>
+
+		<div class="container">
+			<div class="imageContainer align">
+			</div>
+			<div class="align">
+				<h3 class="textFamily reset">Advanced TypeScript</h3>
+				<p class="subtext">Complex types used in reusable library and framework code.</p>
+				<p class="subtext">278 code examples in 29 lessons</p>
+			</div>
+			<div class="percentage align">
+			</div>
+		</div>
+
+
+
+
+
 	</div>
 </body>
 
