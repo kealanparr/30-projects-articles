@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Project 4</title>	
+	<title>Project 4</title>
 	<link rel="stylesheet" href="default.min.css">
 	<script src="highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
@@ -14,11 +14,11 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LPQN06ZQH"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-5LPQN06ZQH');
 	</script>
-	
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 
@@ -26,21 +26,27 @@
 	<div>
 		<header class="header">4. Publish a Twitter bot</header>
 
-		<p>A constant stream of wisdom is promised to all the followers of <a href="https://twitter.com/CodeQuotesBot">@CodeQuotesBot</a> 😉</p>
+		<p>A constant stream of wisdom is promised to all the followers of <a
+				href="https://twitter.com/CodeQuotesBot">@CodeQuotesBot</a> 😉</p>
 
 		<p>I have wanted to create a bot for quite a while, but wasn't sure whether to make a Discord or Twitter bot</p>
 
-		<p>I decided on Twitter, as it was more in the spirit of "building in the open" as Discord is so often private/gated communities</p>
+		<p>I decided on Twitter, as it was more in the spirit of "building in the open" as Discord is so often private/gated
+			communities</p>
 
-		<p>As I wanted to publish a quote roughly about once a minute, I knew I would quickly run out of quotes so I decided to integrate two API's in the cloud function for this project</p>
+		<p>As I wanted to publish a quote roughly about once a minute, I knew I would quickly run out of quotes so I decided
+			to integrate two API's in the cloud function for this project</p>
 
-		<p>I haven't personally looked through every single quote of these two API's - so it's a little annoying I can't veto any/check their quality</p>
+		<p>I haven't personally looked through every single quote of these two API's - so it's a little annoying I can't
+			veto any/check their quality</p>
 
 		<p>I checked the first 5 or so and they all seemed high quality/not problematic - but will keep an eye on them</p>
 
-		<p>Glad I was able to code this up, and ship it super quickly, and learned a lot about triggering cloud functions!</p>
+		<p>Glad I was able to code this up, and ship it super quickly, and learned a lot about triggering cloud functions!
+		</p>
 
-		<p>Firebase's error messages are truly <b>pathetic</b> and I spent ages debugging why an error was occurring, see if you can spot what I missed in the below cloud function</p>
+		<p>Firebase's error messages are truly <b>pathetic</b> and I spent ages debugging why an error was occurring, see if
+			you can spot what I missed in the below cloud function</p>
 
 		<pre>
 			<code class="javascript-html">
@@ -82,15 +88,18 @@ exports.scheduledFunctionCrontab = functions.pubsub.schedule('* * * * *').onRun(
 			<summary>
 				Check your answer
 			</summary>
-			The top function <code>onRun(context => {</code> uses an <code>await</code> - and needs to have <code>async</code> appended
-				<br>
-				<br>
-				None of the Firebase error messages were helpful in finding this error! 
+			The top function <code>onRun(context => {</code> uses an <code>await</code> - and needs to have <code>async</code>
+			appended
+			<br>
+			<br>
+			None of the Firebase error messages were helpful in finding this error!
 		</details>
 
-		<p>If you are reading this after the time I wrote this article (July 2022) I may turn off the bot from posting (or reduce its frequency)</p>
+		<p>If you are reading this after the time I wrote this article (July 2022) I may turn off the bot from posting (or
+			reduce its frequency)</p>
 
-		<p>I will end up paying for using these cloud functions soon - and now I have successfully built, tested and deployed everything - I don't feel the need to support it long term</p>
+		<p>I will end up paying for using these cloud functions soon - and now I have successfully built, tested and
+			deployed everything - I don't feel the need to support it long term</p>
 
 	</div>
 
