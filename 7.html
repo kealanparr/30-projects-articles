@@ -77,12 +77,12 @@
 		<style>
 			.container {
 				display: flex;
-				position: relative;
-				padding: 10px 10px auto auto;
+				padding: 10px 10px;
 				border-radius: 15px;
 				border: 2px solid #2a2745;
 				margin-bottom: 10px;
 				background-color: #201c34;
+				min-width: 450px;
 			}
 
 			.svg::before {
@@ -119,28 +119,21 @@
 			}
 
 			.courseTitle {
-				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
-				display: inline;
 				font-weight: 700;
+				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
 				margin: 5px;
 				font-size: 2rem;
 				text-decoration: underline;
 				line-height: 1.5;
 			}
 
-			.align {
-				display: inline-block;
-				margin: auto 10px auto 10px;
+			.childContainer {
+				margin: auto 10px;
 			}
 
 			.subtext {
 				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
-				margin: 0;
-				padding: 0;
-				border: 0;
-				font-size: 100%;
 				margin: 5px;
-				vertical-align: baseline;
 			}
 
 			@media screen and (max-width: 850px) {
@@ -165,74 +158,74 @@
 		</style>
 
 		<div class="container">
-			<div class="svg basicsTs align">
+			<div class="svg basicsTs childContainer">
 			</div>
-			<div style="width: 100%;" class="align">
+			<div style="width: 100%;" class="childContainer">
 				<h3 class="courseTitle">TypeScript Basics</h3>
 				<p class="subtext">Static types and the TypeScript language from the ground up.</p>
 				<p class="subtext">172 code examples in 25 lessons</p>
 			</div>
-			<div class="svg percentage align">
+			<div class="svg percentage childContainer">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="svg everydayTs align">
+			<div class="svg everydayTs childContainer">
 			</div>
-			<div style="width: 100%;" class="align">
+			<div style="width: 100%;" class="childContainer">
 				<h3 class="courseTitle">Everyday TypeScript</h3>
 				<p class="subtext">TypeScript types for everyday application development.</p>
 				<p class="subtext">421 code examples in 52 lessons</p>
 			</div>
-			<div class="svg percentage align">
+			<div class="svg percentage childContainer">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="svg advancedTs align">
+			<div class="svg advancedTs childContainer">
 			</div>
-			<div style="width: 100%;" class="align">
+			<div style="width: 100%;" class="childContainer">
 				<h3 class="courseTitle">Advanced TypeScript</h3>
 				<p class="subtext">Complex types used in reusable library and framework code.</p>
 				<p class="subtext">278 code examples in 29 lessons</p>
 			</div>
-			<div class="svg percentage align">
+			<div class="svg percentage childContainer">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="svg modernJs align">
+			<div class="svg modernJs childContainer">
 			</div>
-			<div style="width: 100%;" class="align">
+			<div style="width: 100%;" class="childContainer">
 				<h3 class="courseTitle">Modern JavaScript</h3>
 				<p class="subtext">Modern JavaScript features supported by all browsers.</p>
 				<p class="subtext">467 code examples in 44 lessons</p>
 			</div>
-			<div class="svg percentage align">
+			<div class="svg percentage childContainer">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="svg jsConcurrency align">
+			<div class="svg jsConcurrency childContainer">
 			</div>
-			<div style="width: 100%;" class="align">
+			<div style="width: 100%;" class="childContainer">
 				<h3 class="courseTitle">JavaScript Concurrency</h3>
 				<p class="subtext">Callbacks, promises, async/await and event loops.</p>
 				<p class="subtext">222 code examples in 33 lessons</p>
 			</div>
-			<div class="svg percentage align">
+			<div class="svg percentage childContainer">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="svg arrays align">
+			<div class="svg arrays childContainer">
 			</div>
-			<div style="width: 100%;" class="align">
+			<div style="width: 100%;" class="childContainer">
 				<h3 class="courseTitle">JavaScript Arrays</h3>
 				<p class="subtext">Slice, filter, map, reduce, and other array methods.</p>
 				<p class="subtext">219 code examples in 24 lessons</p>
 			</div>
-			<div class="svg percentage align">
+			<div class="svg percentage childContainer">
 			</div>
 		</div>
 
