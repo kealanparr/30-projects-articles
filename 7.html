@@ -58,13 +58,15 @@
 		<p>The whole point of 30-projects is to code more, build more and ship more - so following along a course wasn't
 			quite in the spirit of the challenge</p>
 
-		<p>I wanted to be "hands-on" and either build something with these features, or complete coding exercises by using the features
+		<p>I wanted to be "hands-on" and either build something with these features, or complete coding exercises by using
+			the features
 		</p>
 
 		<p>This was when I discovered <a href="https://www.executeprogram.com/">Execute Program</a> (I'm not affiliated, or
 			paid in any way)</p>
 
-		<p>I could get hands on "practice" learning the features, and the curriculum would only let you move on if you complete exercises
+		<p>I could get hands on "practice" learning the features, and the curriculum would only let you move on if you
+			complete exercises
 			(and pass the tests)</p>
 
 		<p>This seemed much closer to what I wanted, so for the past few months I have been working through their TypeScript
@@ -84,78 +86,43 @@
 				margin-bottom: 10px;
 			}
 
-			.advancedTs::before {
+			.base::before {
 				display: inline-block;
 				content: ' ';
 				border-radius: 15px;
-				background-image: url('/assets//7/advanced-ts.svg');
 				background-size: 100px 100px;
 				height: 100px;
 				width: 100px;
+			}
+
+			.advancedTs::before {
+				background-image: url('/assets//7/advanced-ts.svg');
 			}
 
 			.modernJs::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
 				background-image: url('/assets/7/modern-js.svg');
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
 			}
 
 			.jsConcurrency::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
 				background-image: url('/assets/7/js-concurrency.svg');
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
 			}
 
 			.arrays::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
 				background-image: url('/assets/7/arrays.svg');
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
 			}
 
 			.everydayTs::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
 				background-image: url('/assets/7/everyday-ts.svg');
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
 			}
 
 			.basicsTs::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
 				background-image: url('/assets/7/ts-basics.svg');
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
 			}
 
 			.percentage::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
-				background-image: url('/assets//7/100.svg');
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
-
 				border: 3px solid #2c706b;
+				background-image: url('/assets//7/100.svg');
 				border-radius: 75px;
-				height: 100px;
 			}
 
 			.textFamily {
@@ -203,76 +170,79 @@
 		</style>
 
 		<div class="container">
-			<div class="basicsTs align">
+			<div class="base basicsTs align">
 			</div>
 			<div style="width: 100%;" class="align">
-				<h3 class="textFamily reset">TypeScript Basics</h3>
+				<h3 class="textFamily">TypeScript Basics</h3>
 				<p class="subtext">Static types and the TypeScript language from the ground up.</p>
 				<p class="subtext">172 code examples in 25 lessons</p>
 			</div>
-			<div class="percentage align">
+			<div class="base percentage align">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="everydayTs align">
+			<div class="base everydayTs align">
 			</div>
 			<div style="width: 100%;" class="align">
-				<h3 class="textFamily reset">Everyday TypeScript</h3>
+				<h3 class="textFamily">Everyday TypeScript</h3>
 				<p class="subtext">TypeScript types for everyday application development.</p>
 				<p class="subtext">421 code examples in 52 lessons</p>
 			</div>
-			<div class="percentage align">
+			<div class="base percentage align">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="advancedTs align">
+			<div class="base advancedTs align">
 			</div>
 			<div style="width: 100%;" class="align">
-				<h3 class="textFamily reset">Advanced TypeScript</h3>
+				<h3 class="textFamily">Advanced TypeScript</h3>
 				<p class="subtext">Complex types used in reusable library and framework code.</p>
 				<p class="subtext">278 code examples in 29 lessons</p>
 			</div>
-			<div class="percentage align">
+			<div class="base percentage align">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="modernJs align">
+			<div class="base modernJs align">
 			</div>
 			<div style="width: 100%;" class="align">
-				<h3 class="textFamily reset">Modern JavaScript</h3>
+				<h3 class="textFamily">Modern JavaScript</h3>
 				<p class="subtext">Modern JavaScript features supported by all browsers.</p>
 				<p class="subtext">467 code examples in 44 lessons</p>
 			</div>
-			<div class="percentage align">
+			<div class="base percentage align">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="jsConcurrency align">
+			<div class="base jsConcurrency align">
 			</div>
 			<div style="width: 100%;" class="align">
-				<h3 class="textFamily reset">JavaScript Concurrency</h3>
+				<h3 class="textFamily">JavaScript Concurrency</h3>
 				<p class="subtext">Callbacks, promises, async/await and event loops.</p>
 				<p class="subtext">222 code examples in 33 lessons</p>
 			</div>
-			<div class="percentage align">
+			<div class="base percentage align">
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="arrays align">
+			<div class="base arrays align">
 			</div>
 			<div style="width: 100%;" class="align">
-				<h3 class="textFamily reset">JavaScript Arrays</h3>
+				<h3 class="textFamily">JavaScript Arrays</h3>
 				<p class="subtext">Slice, filter, map, reduce, and other array methods.</p>
 				<p class="subtext">219 code examples in 24 lessons</p>
 			</div>
-			<div class="percentage align">
+			<div class="base percentage align">
 			</div>
 		</div>
+
+		<p>Need to run basic python server to serve assets</p>
+		<p>https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server</p>
 
 		<div>
 			<div style="display: flex; justify-content: start;">
