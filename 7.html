@@ -17,6 +17,89 @@
 		gtag('js', new Date());
 		gtag('config', 'G-5LPQN06ZQH');
 	</script>
+
+	<style>
+		.container {
+			display: flex;
+			padding: 10px 10px;
+			border-radius: 15px;
+			border: 2px solid #2a2745;
+			margin-bottom: 10px;
+			background-color: #201c34;
+			min-width: 450px;
+		}
+
+		.svg::before {
+			display: inline-block;
+			content: ' ';
+			border-radius: 15px;
+			background-size: 100px 100px;
+			height: 100px;
+			width: 100px;
+		}
+
+		.advancedTs::before {
+			background-image: url('/assets//7/advanced-ts.svg');
+		}
+		.modernJs::before {
+			background-image: url('/assets/7/modern-js.svg');
+		}
+		.jsConcurrency::before {
+			background-image: url('/assets/7/js-concurrency.svg');
+		}
+		.arrays::before {
+			background-image: url('/assets/7/arrays.svg');
+		}
+		.everydayTs::before {
+			background-image: url('/assets/7/everyday-ts.svg');
+		}
+		.basicsTs::before {
+			background-image: url('/assets/7/ts-basics.svg');
+		}
+		.percentage::before {
+			border: 5px solid #2c706b;
+			background-image: url('/assets//7/100.svg');
+			border-radius: 75px;
+		}
+
+		.courseTitle {
+			font-weight: 700;
+			font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
+			margin: 5px;
+			font-size: 2rem;
+			line-height: 1.5;
+		}
+
+		.childContainer {
+			margin: auto 10px;
+		}
+
+		.subtext {
+			font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
+			margin: 5px;
+		}
+
+		@media screen and (max-width: 850px) {
+			.percentage {
+				display: none;
+			}
+
+			.advancedTs,
+			.modernJs,
+			.jsConcurrency,
+			.arrays,
+			.everydayTs,
+			.basicsTs {
+				display: none;
+			}
+
+			.subtext {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+
 </head>
 
 <body>
@@ -71,88 +154,6 @@
 			courses</p>
 
 		<p>I initially only started with the TypeScript challenges but ended up doing more courses than I expected!</p>
-
-		<style>
-			.container {
-				display: flex;
-				padding: 10px 10px;
-				border-radius: 15px;
-				border: 2px solid #2a2745;
-				margin-bottom: 10px;
-				background-color: #201c34;
-				min-width: 450px;
-			}
-
-			.svg::before {
-				display: inline-block;
-				content: ' ';
-				border-radius: 15px;
-				background-size: 100px 100px;
-				height: 100px;
-				width: 100px;
-			}
-
-			.advancedTs::before {
-				background-image: url('/assets//7/advanced-ts.svg');
-			}
-			.modernJs::before {
-				background-image: url('/assets/7/modern-js.svg');
-			}
-			.jsConcurrency::before {
-				background-image: url('/assets/7/js-concurrency.svg');
-			}
-			.arrays::before {
-				background-image: url('/assets/7/arrays.svg');
-			}
-			.everydayTs::before {
-				background-image: url('/assets/7/everyday-ts.svg');
-			}
-			.basicsTs::before {
-				background-image: url('/assets/7/ts-basics.svg');
-			}
-			.percentage::before {
-				border: 5px solid #2c706b;
-				background-image: url('/assets//7/100.svg');
-				border-radius: 75px;
-			}
-
-			.courseTitle {
-				font-weight: 700;
-				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
-				margin: 5px;
-				font-size: 2rem;
-				line-height: 1.5;
-			}
-
-			.childContainer {
-				margin: auto 10px;
-			}
-
-			.subtext {
-				font-family: Inconsolata-dz-ep, Consolas, Monaco, monospace;
-				margin: 5px;
-			}
-
-			@media screen and (max-width: 850px) {
-				.percentage {
-					display: none;
-				}
-
-				.advancedTs,
-				.modernJs,
-				.jsConcurrency,
-				.arrays,
-				.everydayTs,
-				.basicsTs {
-					display: none;
-				}
-
-				.subtext {
-					margin-top: 10px;
-					margin-bottom: 10px;
-				}
-			}
-		</style>
 
 		<div class="container">
 			<div class="svg basicsTs childContainer">
@@ -237,6 +238,9 @@
 				<a style="text-decoration: none; font-size: 100px;" href="/6">&#x2190;</a>
 			</div>
 		</div>
+
+		<!-- <h1 style="text-align: center;">Jump to project</h1>
+		<h1 style="text-align: center;"><a style="text-decoration: none;">1</a></h1> -->
 
 	</div>
 </body>
