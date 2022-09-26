@@ -12,9 +12,11 @@ const checkValidHTML = async response => {
     if (htmlValidity.messages.length !== 0) {
 			console.error(`Issues with the page ${response.request.path}!`)
 			console.error('To fix this, you can take a look at what is broken with the HTML here: https://validator.w3.org/#validate_by_input')
+			process.exit(1)
 		}
   } catch (err) {
     console.error('Failed to check valid HTML', err)
+		process.exit(1)
   }
 }
 
@@ -25,6 +27,7 @@ const checkArticle = async url => {
 	})
 	} catch (err) {
 		console.error(`Failed on the GET request for url ${url}`, err)
+		process.exit(1)
 	}
 }
 
