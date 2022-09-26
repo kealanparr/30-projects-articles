@@ -1,6 +1,5 @@
 const axios = require('axios')
 const validator = require('html-validator')
-// const parser = require('node-html-parser')
 
 const checkValidHTML = async response => {
   const options = {
@@ -14,6 +13,7 @@ const checkValidHTML = async response => {
 			console.error('To fix this, you can take a look at what is broken with the HTML here: https://validator.w3.org/#validate_by_input')
 			process.exit(1)
 		}
+		return response
   } catch (err) {
     console.error('Failed to check valid HTML', err)
 		process.exit(1)
