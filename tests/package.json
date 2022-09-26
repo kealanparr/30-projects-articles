@@ -1,0 +1,20 @@
+{
+  "name": "30-project-articles-tests",
+  "version": "1.0.0",
+  "description": "On each new 30 project release - ensure there are no major issues with the articles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Kealan Parr",
+  "license": "ISC",
+  "homepage": "https://github.com/kealanparr/30-projects-articles",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "html-validator": "^6.0.1",
+    "node-html-parser": "^6.1.1"
+  }
+}
