@@ -100,6 +100,7 @@
 		}
 	</style>
 
+	<script src="components/utils.js"></script>
 </head>
 
 <body>
@@ -233,14 +234,10 @@
 
 		<p>Onto project eight ✔️</p>
 
-		<div>
-			<div style="display: flex; justify-content: start;">
-				<a style="text-decoration: none; font-size: 100px;" href="/6">&#x2190;</a>
-			</div>
-		</div>
-
-		<!-- <h1 style="text-align: center;">Jump to project</h1>
-		<h1 style="text-align: center;"><a style="text-decoration: none;">1</a></h1> -->
+		<script>
+			backArrowOnly(workOutCurrentPage()-1)
+			jumpToProjects()
+		</script>
 
 	</div>
 </body>

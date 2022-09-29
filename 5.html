@@ -18,6 +18,7 @@
 		gtag('config', 'G-5LPQN06ZQH');
 	</script>
 
+	<script src="components/utils.js"></script>
 </head>
 
 <body>
@@ -54,10 +55,11 @@
 
 		<p>Onto project six ✔️</p>
 
-		<div style="display: flex; justify-content: space-between;">
-			<a style="text-decoration: none; font-size: 100px;" href="/4">&#x2190;</a>
-			<a style="text-decoration: none; font-size: 100px;" href="/6">&#x2192;</a>
-		</div>
+		<script>
+			forwardAndBackwardsArrow(workOutCurrentPage()-1, workOutCurrentPage()+1)
+			jumpToProjects()
+		</script>
+
 
 	</div>
 </body>

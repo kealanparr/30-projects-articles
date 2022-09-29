@@ -20,3 +20,13 @@ html {
 a {
 	color: #98b0e2;
 }
+
+.arrow {
+	text-decoration: none;
+	font-size: 100px;
+}
+.prjLink {
+	text-decoration: none;
+	font-size: 60px;
+	margin-right: 10px;
+}

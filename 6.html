@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="assets/default.min.css">
 	<script src="assets/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
+	<link rel="stylesheet" href="assets/styles.css">
 	<link rel="icon" type="image/png" href="assets/favicon.svg" sizes="16x16">
 
 	<!-- Google Analytics -->
@@ -20,7 +21,7 @@
 		gtag('config', 'G-5LPQN06ZQH');
 	</script>
 
-	<link rel="stylesheet" href="assets/styles.css">
+	<script src="components/utils.js"></script>
 </head>
 
 <body>
@@ -134,10 +135,10 @@ git push -f origin main
 
 		<img alt="An email body that shows 3 headers, one of working URL's, one of broken URL's and one of URL's that errored in Kealan's code. All of the URL's are working, and contain more URL's than the last image" src='assets/6/email-body-new.JPG'>
 
-		<div style="display: flex; justify-content: space-between;">
-			<a style="text-decoration: none; font-size: 100px;" href="/5">&#x2190;</a>
-			<a style="text-decoration: none; font-size: 100px;" href="/7">&#x2192;</a>
-		</div>
+		<script>
+			forwardAndBackwardsArrow(workOutCurrentPage()-1, workOutCurrentPage()+1)
+			jumpToProjects()
+		</script>
 
 	</div>
 </body>

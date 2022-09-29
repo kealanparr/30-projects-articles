@@ -10,6 +10,7 @@
 	<script src="assets/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
 	<link rel="icon" type="image/png" href="assets/favicon.svg" sizes="16x16">
+	<link rel="stylesheet" href="assets/styles.css">
 
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LPQN06ZQH"></script>
@@ -20,7 +21,7 @@
 		gtag('config', 'G-5LPQN06ZQH');
 	</script>
 
-	<link rel="stylesheet" href="assets/styles.css">
+	<script src="components/utils.js"></script>
 </head>
 
 <body>
@@ -102,14 +103,14 @@ exports.scheduledFunctionCrontab = functions.pubsub.schedule('* * * * *').onRun(
 		<p>I will end up paying for using these cloud functions soon - and now I have successfully built, tested and
 			deployed everything - I don't feel the need to support it long term</p>
 
-			<p>Onto project five ✔️</p>
+		<p>Onto project five ✔️</p>
 
 	</div>
 
-	<div style="display: flex; justify-content: space-between;">
-		<a style="text-decoration: none; font-size: 100px;" href="/3">&#x2190;</a>
-		<a style="text-decoration: none; font-size: 100px;" href="/5">&#x2192;</a>
-	</div>
+	<script>
+		forwardAndBackwardsArrow(workOutCurrentPage()-1, workOutCurrentPage()+1)
+		jumpToProjects()
+	</script>
 
 </body>
 
