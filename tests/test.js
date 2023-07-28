@@ -1,6 +1,8 @@
 const axios = require('axios')
 const validator = require('html-validator')
 
+const TOTAL_PROJECTS = 8
+
 const checkValidHTML = async response => {
   const options = {
     data: response.data
@@ -31,12 +33,8 @@ const checkArticle = async url => {
 	}
 }
 
-
-checkArticle('https://30-projects-articles.com')
-checkArticle('https://30-projects-articles.com/1')
-checkArticle('https://30-projects-articles.com/2')
-checkArticle('https://30-projects-articles.com/3')
-checkArticle('https://30-projects-articles.com/4')
-checkArticle('https://30-projects-articles.com/5')
-checkArticle('https://30-projects-articles.com/6')
-checkArticle('https://30-projects-articles.com/7')
+(async () => {
+	for (let i = 1; i <= TOTAL_PROJECTS; i++) {
+		await checkArticle(`https://30-projects-articles.com/${i}`)
+	}
+})()
