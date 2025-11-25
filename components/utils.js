@@ -1,4 +1,4 @@
-const TOTAL_PROJECTS_COMPLETE = 9
+const TOTAL_PROJECTS_COMPLETE = 10
 
 const jumpToProjects = () => {
 	let jumpToPrjHtml = '<h1 style="text-align: center;">Jump to project</h1><div style="text-align: center;">'

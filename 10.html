@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Project 10</title>
+	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="icon" type="image/png" href="assets/favicon.svg" sizes="16x16">
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LPQN06ZQH"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-5LPQN06ZQH');
+	</script>
+
+	<script src="components/utils.js"></script>
+</head>
+
+<body>
+	<div>
+		<header class="header">10. Create a MCP server</header>
+
+		<p>I have a friend who works (like me) as a software engineer</p>
+
+		<p>I call him a few times a week, and we talk about things going on in our life, tech, work - a whole host of things</p>
+
+		<p>He told me recently (because he's started a new job) about some cool AI stuff he's been doing</p>
+
+		<p>I was intrigued, and wanted to try and do two things with my next project</p>
+
+		<ol>
+			<li>I wanted to build something with AI</li>
+			<li>I wanted to build something for AI</li>
+		</ol>
+
+		<p>When I say "for AI" I mean, I wanted to try and make a Model Context Protocol (MCP) server</p>
+
+		<p>We've "solved" essentially how to nicely prompt machines with language models, but one problem we currently face is the data we use to train these models is so large they aren't specialists</p>
+
+		<p>These language models can act like a therapist, a friend, a devil's advocate - whatever you want</p>
+		
+		<p>An MCP server is a protocol for allowing AIs to search the web, query data, run terminal commands, do automated tasks etc.</p>
+
+		<p>It's augmenting AI to be much, much more powerful - and I wanted to try and make my AI much more specific, over a small area of domain knowledge, and so here began project 10!</p>
+
+
+		<h1><u>What data am I gonna use? 🤔</u></h1>
+
+		<p>I found a database of the Cassini-Huygens space-research mission by NASA</p>
+
+		<p>This was a 13 year mission, between 2004-2017, and was created to study the planet Saturn and its system, including its rings and natural satellites</p>
+
+		<p>The probe orbited Saturn 294 times, and the database of logs is free and has approx 61,874 activities logged</p>
+
+		<img alt="An image of a SQLite database with a large amount of rows, and logs shown" src='assets/10/data.png'>
+
+		<p>This looks like a good start!</p>
+
+		<h1><u>Can an AI create the MCP server?</u></h1>
+
+		<p>I wanted to try and ask Claude to break this server down into 5 iterations, and do each section at a time</p>
+
+		<p>I also asked it to create audit logs (of what I prompted) and what it did in my docs folder, which it did successfully, you can view <a href="https://github.com/kealanparr/mcp-project10/tree/dev/docs/logs">here</a></p>
+
+		<p>I can now just prompt, and let Claude do most of the work here</p>
+
+		<p>Okay, iteration 1 through 5 is now complete - let's test this with our client</p>
+
+		<h1><u>Some examples of client prompts</u></h1>
+
+		<img alt="A prompt from AI explaining the building of an MCP server, was a success" src='assets/10/q-start.jpg'>
+
+		<br>
+		<br>
+
+		<img alt="An AI prompt asking how many teams were involved in the Cassini-Huygens mission, and the answer being 15" src='assets/10/q1.jpg'>
+
+		<br>
+		<br>
+
+		<img alt="An AI prompt asking what the Magnetometer team did" src='assets/10/q2.jpg'>
+
+		<br>
+		<br>
+
+		<img alt="An AI prompt asking how many flights there were, and the answer being 61,874" src='assets/10/q3.jpg'>
+
+		<br>
+		<br>
+
+		<img style="width: 90%" alt="An AI prompt asking what the most common type of flight was, and the answer being SPASS Rider, SPASS meaning Science Planning and Sequencing Software." src='assets/10/q4.jpg'>
+
+		<br>
+		<br>
+
+		<img style="width: 90%" alt="An AI prompt asking what the most common types of flights were, and the answer 1. SPASS Rider, 2. Non-SPASS, 3. Prime, 4. SPASS Note, 5. (Empty/Null) and 6. spass_type" src='assets/10/q5.jpg'>
+
+		<br>
+		<br>
+
+		<img style="width: 90%" alt="An AI prompt asking how many Prime flights there were and the answer being 13,600" src='assets/10/q6.jpg'>
+
+		<br>
+		<br>
+
+		<img style="width: 90%" alt="An AI prompt asking if the AI could answer as clearly without the MCP server, and the answer being it could not" src='assets/10/q7.jpg'>
+
+		<p>This has been a pretty interesting learning exercise for me to learn more about AI</p>
+
+		<p>So far, I'm a little pessimistic and largely agree with <a href="https://www.theregister.com/2025/11/18/linus_torvalds_vibe_coding/">Linus Torvalds who said AI coding is fine, as long as it's not being used in production</a> - but I'm intrigued to see how development cycles change over the coming years</p>
+
+		<p>We've officially reached 1/3 of the way through 30 projects!</p>
+		
+		<p>Onwards dear knight, to project 11 ✔️</p>
+
+		<script>
+			backArrowOnly(workOutCurrentPage() - 1)
+			jumpToProjects()
+		</script>
+
+	</div>
+</body>
+
+</html>
