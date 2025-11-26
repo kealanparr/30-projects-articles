@@ -1,7 +1,7 @@
 const TOTAL_PROJECTS_COMPLETE = 10
 
 const jumpToProjects = () => {
-	let jumpToPrjHtml = '<h1 style="text-align: center;">Jump to project</h1><div style="text-align: center;">'
+	let jumpToPrjHtml = '<h1 style="text-align: center;">Jump to project</h1><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; line-height: 1;">'
 	for (let i = 1; i <= TOTAL_PROJECTS_COMPLETE; i++) {
 		jumpToPrjHtml += `<a href="/${i}" class="prjLink">${i}</a>`
 
